@@ -2,9 +2,10 @@
 
 $background-color: #222831;
 $primary-color: #eeeeee;
-$secondary-color: #fff;
-$box-background-color: #555;
-$text-color: #fff;
+$secondary-color: #a1f089;
+$box-background-color: #322836;
+$box-background-color-hover: #362942b9;
+$text-color: rgb(94, 175, 241);
 
 * {
     box-sizing: border-box;
@@ -56,6 +57,7 @@ p {
     align-items: center;
     border-bottom: 1px solid #fff;
     padding: 20px;
+    flex: 2.5;
 
     p {
         font-size: 2rem;
@@ -66,29 +68,30 @@ p {
 .body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
     padding: 30px 40px;
+    flex: 7;
 
     .info {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 20px;
 
         p {
+            color: $primary-color;
             font-size: 1.8rem;
         }
     }
 
-    .question {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .question-container {
         width: 70%;
         text-align: center;
-        background-color: #c58484;
-        margin-bottom: 50px;
+        background-color: #241520;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
     .answers {
@@ -97,16 +100,20 @@ p {
         &-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 30px;
+            grid-gap: 20px;
             text-align: center;
 
             .specific-answer {
                 background-color: $box-background-color;
-                padding: 20px 20px;
-            }
-
-            p {
+                padding: 3px;
+                padding: 12px 20px;
+                cursor: pointer;
                 font-size: 1.8rem;
+                color: $text-color;
+
+                &:hover {
+                    background-color: $box-background-color-hover;
+                }
             }
         }
     }
@@ -118,4 +125,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex: 1.5;
+    p {
+        color: $primary-color;
+    }
 }

@@ -12,42 +12,44 @@
     <div class="container">
         <div class="header">
             <h1>Quiz Game</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Enhance your knowledge with this simple game! </p>
         </div>
         <div class="body">
             <div class="info">
                 <div class="question-number">
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Question: <span id='current-question'>0</span>/<span id='total-question'>0</span> </p>
                 </div>
-                <div class="score">
-                    <p>Lorem ipsum dolor sit.</p>
+                <div class="score-container">
+                    <p>Score: <span id='score'>0</span></p>
                 </div>
             </div>
-            <div class="question">
-                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum.</h3>
+            <div class="question-container">
+                <h3 id='question'>Loading...</h3>
             </div>
             <div class="answers">
                 <div class="answers-grid">
-                    <div class="specific-answer">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="specific-answer" data-number='1'>
+                        Loading...
                     </div>
-                    <div class="specific-answer">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="specific-answer" data-number='2'>
+                        Loading...
                     </div>
-                    <div class="specific-answer">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="specific-answer" data-number='3'>
+                        Loading...
                     </div>
-                    <div class="specific-answer">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="specific-answer" data-number='4'>
+                        Loading...
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eligendi!</p>
+            <p>Made by Luong Anh</p>
+            <p>June, 2020</p>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="./app.js"></script>
 </body>
 
